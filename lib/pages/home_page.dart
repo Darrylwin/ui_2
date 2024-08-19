@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/header_section.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -7,8 +9,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text("HomePage"),
+        child: Column(
+          children: [
+            HeaderSection(),
+          ],
+        ),
       ),
     );
   }
 }
+

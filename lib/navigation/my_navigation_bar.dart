@@ -46,11 +46,12 @@ class _NavigationBarState extends State<MyNavigationBar> {
           currentIndex: selectedIndex,
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.school), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.chat_bubble_rounded), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Home"),
+                icon: Icon(Icons.school), label: "Education"),
+            BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Menu"),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.chat_bubble_rounded), label: "Messages"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Profil"),
           ],
           iconSize: 30,
           selectedItemColor: Colors.white,

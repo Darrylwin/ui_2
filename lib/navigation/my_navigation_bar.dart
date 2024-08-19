@@ -45,18 +45,16 @@ class _NavigationBarState extends State<MyNavigationBar> {
           type: BottomNavigationBarType.fixed,
           currentIndex: selectedIndex,
           items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.school), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.apps), label: "Home"),
             BottomNavigationBarItem(
-                icon: Icon(Icons.home, color: Colors.white), label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.school, color: Colors.white), label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.apps, color: Colors.white), label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.chat_bubble_rounded, color: Colors.white),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person, color: Colors.white), label: "Home"),
+                icon: Icon(Icons.chat_bubble_rounded), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.person), label: "Home"),
           ],
+          iconSize: 30,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.white.withOpacity(.5),
         ),
       ),
     );
